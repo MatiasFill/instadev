@@ -24,6 +24,7 @@
     </q-scroll-area>
 
     <Posts v-for="item in 10" :key="item"/> 
+
      <div class="container-bottom full-width q-pb-lg">
        <q-separator class="full-width q-mb-sm" />
        <BottomBar/>
@@ -55,12 +56,7 @@ export default {
     top: 0;
     background-color: $background-light;
   }
-  .container-bottom {
-    z-index: 6000px;
-    position: fixed;
-    bottom: 0;
-    background-color: $background-light;
-  }
+
   .q-avatar {
     display: flex;
     align-items: center;

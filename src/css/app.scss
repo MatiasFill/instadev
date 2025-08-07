@@ -9,3 +9,10 @@
     color: #000000;
     opacity: 0.4;
 }
+
+.container-bottom {
+    z-index: 6000px;
+    position: fixed;
+    bottom: 0;
+    background-color: $background-light;
+}
