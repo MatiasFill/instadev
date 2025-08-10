@@ -6,6 +6,7 @@ const routes = [
       { path: 'signin', component: () => import('pages/Signin/Index.vue'), alias: ''},
       { path: 'main', component: () => import('pages/MainPage/Index.vue')},
       { path: 'my-area', component: () => import('pages/MyArea/Index.vue')},
+      { path: 'profile', component: () => import('src/pages/Profile/Index.vue')},
     ],
   },
 
