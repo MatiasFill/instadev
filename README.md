@@ -1,4 +1,4 @@
-# InstaDev (bootcamp)
+# Quasar App (instadevevolution)
 
 A Quasar Project
 

@@ -1,11 +1,11 @@
 <template>
   <q-page class="flex">
     <div class="full-width row items-center justify-between bg-grey-2">
-      <q-btn flat color="primary" label="Cancel" />
+      <q-btn flat color="grey-9" label="Cancel" />
       <strong>Edit Profile</strong>
       <q-btn flat color="primary" label="Done" />
     </div>
-    <div class="full-width items-center justify-center">
+    <div class="full-width column items-center justify-center">
        <q-avatar size="95px">
           <img src="https://cdn.quasar.dev/img/avatar.png">
        </q-avatar>
@@ -14,19 +14,19 @@
       <div class="full-width column q-px-sm">
         <div class="container-input row justify-center items-center">
           <span>Name</span>
-          <q-input v-model="text" placeholder=" name" />
+          <q-input v-model="tab" placeholder=" name" />
         </div>
         <div class="container-input row justify-center items-center">
           <span>Username</span>
-          <q-input v-model="text" placeholder="user name" />
+          <q-input v-model="tab" placeholder="user name" />
         </div>
         <div class="container-input row justify-center items-center">
           <span>Website</span>
-          <q-input v-model="text" placeholder=" website" />
+          <q-input v-model="tab" placeholder=" website" />
         </div>
         <div class="container-input row justify-center items-center">
           <span>Bio</span>
-          <q-input v-model="text" autogrow placeholder="bio" />
+          <q-input v-model="tab" autogrow placeholder="bio" />
         </div>
       </div>
       <div class="full-width column items-start q-px-sm">
@@ -37,16 +37,16 @@
         <div class="full-width">
           <div class="container-input row justify-center items-center">
             <span>Email</span>
-            <q-input v-model="text" autogrow placeholder=" email" />
+            <q-input v-model="tab" autogrow placeholder=" email" />
           </div>
 
           <div class="container-input row justify-center items-center">
             <span>Phone</span>
-            <q-input v-model="text" autogrow placeholder=" cellphone" />
+            <q-input v-model="tab" autogrow placeholder=" cellphone" />
           </div>  
           <div class="container-input row justify-center items-center">
             <span>Gender</span>
-            <q-input v-model="text" autogrow placeholder=" gender" />
+            <q-input v-model="tab" autogrow placeholder=" gender" />
           </div> 
         </div>
       </div>  
@@ -58,7 +58,7 @@ export default {
   name: 'ProfilePage',
   data() {
     return {
-      text: '',
+      tab: 'grid',
     };
   },
 };
